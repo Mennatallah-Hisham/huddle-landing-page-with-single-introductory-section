@@ -1,0 +1,161 @@
+:root{
+    --clr-voilet: hsl(257, 40%, 49%);
+    --clr-soft-magnet:hsl(300, 69%, 71%);
+}
+
+
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    background-color:var(--clr-voilet);
+}
+header{
+
+    padding:2em 1em;
+    background-image: url("./images/bg-mobile.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+
+}
+.logo {
+width:40%;
+
+padding-bottom: 2em;
+}
+
+.img{
+    width:90%;
+    max-width: 1000px;
+    margin: 0 auto;
+ 
+  
+}
+
+.logo img ,img{
+    max-width:100%;
+}
+
+
+
+.content{
+ margin-top:2em;
+    padding:0 2em;
+    display: flex;
+    flex-direction: column;
+    align-content:center ;
+
+    color:white;
+    line-height: 1.5;
+    text-align: center;
+}
+.content h1{
+    text-transform: capitalize;
+    font-family:"Poppins", sans-serif;
+    width:90%;
+  font-weight: 600;
+    margin:0 auto;
+}
+.content p{
+    margin:2em auto;
+     max-width: 500px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+  
+}
+
+
+.CTA{
+  width:80%;
+  max-width: 250px;
+  margin:0 auto;
+    text-transform: capitalize;
+    text-align: center;
+    color:var(--clr-voilet);
+    padding:0.8em 5em;
+    border-radius: 25px;
+    outline:none;
+    border:none;
+
+   
+}
+.CTA:hover{
+    background-color: var(--clr-soft-magnet);
+    color:white;
+}
+
+
+footer ul{
+    list-style:none;
+
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    margin-top: 4em;
+    margin-bottom: 2em;
+
+}
+.icon{
+
+    color:white;
+    border:1px solid white;
+    border-radius: 50%;
+    padding:0.5em 0.6em;
+    margin:0.5em;
+}
+.icon:hover{
+    background-color: var(--clr-soft-magnet);
+    border:1px solid var(--clr-soft-magnet);
+}
+
+
+@media (min-width:900px) {
+    .container{
+        max-width:1500px;
+        margin:0 auto;
+        height:100vh;
+      
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("./images/bg-desktop.svg");
+        
+    }
+    .col{
+        width:50%;
+    }
+   
+   .content{
+    margin-right:3em;
+    justify-content: center;
+
+    text-align: left;
+
+   }
+   .content h1{
+ 
+    font-size:35px;
+    width:400px
+   }
+    header{
+        background-image: none;
+    }
+    .content p{
+     
+    }
+    
+   .CTA{
+   
+      width:200px;
+    } 
+    footer ul{
+        margin-right:5em;
+      
+        /* margin-top:20em; */
+        justify-content:right;
+    }
+}
